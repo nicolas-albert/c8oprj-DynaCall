@@ -1,0 +1,8 @@
+↑convertigo: 7.6.0.m006
+↓DynaCall [core.Project]: 
+  comment: Add dynamic variables to a CallSequence
+  version: 1
+  ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓Main [sequences.GenericSequence]: 🗏 sequences/Main.yaml
+  ↓SeqA [sequences.GenericSequence]: 🗏 sequences/SeqA.yaml
+  ↓SeqB [sequences.GenericSequence]: 🗏 sequences/SeqB.yaml

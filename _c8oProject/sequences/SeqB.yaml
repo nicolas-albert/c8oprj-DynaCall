@@ -1,0 +1,11 @@
+↓jElement [steps.ElementStep-1594803425892]: 
+  expression: context.sequenceName
+  nodeName: sequence
+↓Input_variables [steps.InputVariablesStep-1594800998116]: 
+  output: true
+↓always [variables.RequestableVariable-1594800926273]: 
+  value: default
+↓pB1 [variables.RequestableVariable-1594800959508]: 
+  value: default
+↓pB2 [variables.RequestableVariable-1594800959511]: 
+  value: default

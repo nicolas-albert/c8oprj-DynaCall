@@ -1,0 +1,41 @@
+accessibility: Hidden
+↓InitParams [steps.SimpleStep-1594800705246]: 
+  expression: |
+    'var __sequence = sequence;
+    
+    vars = JSON.parse(vars);
+    
+    var parent = context.requestedObject.currentStep.getParent();
+    var callSeq = parent.getDatabaseObjectChild("CallSeq");
+    
+    for (key in vars) {
+    	var v = new com.twinsoft.convertigo.beans.variables.StepVariable();
+    	v.setName(key);
+    	v.setValueOrNull(vars[key]);
+    	callSeq.addVariable(v);
+    }'
+↓CallSeq [steps.SequenceStep-1594800678763]: 
+  output: true
+  sourceSequence: DynaCall.SeqA
+  ↓__sequence [variables.StepVariable-1594800729467]: 
+  ↓always [variables.StepVariable-1594800903291]: 
+↓always [variables.RequestableVariable-1594801090678]: 
+  value: defaultMain
+↓sequence [variables.RequestableVariable-1594801126107]: 
+  value: SeqA
+↓vars [variables.RequestableVariable-1594801140732]: 
+  value: '{"pA1":"defaultMain1","pA2":"defaultMain2"}'
+↓TCA [core.TestCase]: 
+  ↓always [variables.TestCaseVariable-1594801235230]: 
+    value: TCA
+  ↓sequence [variables.TestCaseVariable-1594801235232]: 
+    value: SeqA
+  ↓vars [variables.TestCaseVariable-1594801235234]: 
+    value: '{"pA1":"TCA1","pA2":"TCA2"}'
+↓TCB [core.TestCase]: 
+  ↓always [variables.TestCaseVariable-1594801272597]: 
+    value: TCB
+  ↓sequence [variables.TestCaseVariable-1594801272600]: 
+    value: SeqB
+  ↓vars [variables.TestCaseVariable-1594801272603]: 
+    value: '{"pB1":"TCB1","pB2":"TCB2"}'
